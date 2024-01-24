@@ -1,0 +1,49 @@
+ * {
+     margin: 0px;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+ }
+
+ .container {
+     width: 400px;
+     height: 400px;
+     background-color: black;
+     position: relative;
+     margin: 0 auto;
+     animation-name: box;
+     animation: box 3s infinite linear;
+     /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmwaEiTfQ5zcDjZKzz9pAwJy1tBBiadZU2Qw&usqp=CAU');
+     background-size: 170%;
+     background-position: center; */
+ }
+
+ @keyframes box {
+     0% {
+         background-color: aqua;
+         transform: rotate(0deg);
+     }
+
+     50% {
+         background-color: red;
+         border-radius: 50% 50% 50% 50%;
+         transform: rotate(360deg);
+     }
+
+     60% {
+         background-color: gold;
+         border-radius: 50% 50% 50% 50%;
+         transform: rotate(150deg);
+     }
+
+     100% {
+         background-color: blue;
+         transform: rotate(0deg);
+         border-radius: 0;
+     }
+ }
